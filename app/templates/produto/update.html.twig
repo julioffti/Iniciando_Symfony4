@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    Edição de produto -
+{% endblock %}
+
+{% block body %}
+    <h1>Editar produto - <small>{{ produto.nome }}</small></h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <a href="{{ path('listar-produto') }}" class="pull-right"><i class="fa fa-arrow-circle-left fa-3x"></i></a>
+        </div>
+    </div>
+    <hr>
+    {% include "produto/_form.html.twig" %}
+{% endblock %}

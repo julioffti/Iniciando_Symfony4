@@ -1,0 +1,19 @@
+listar-produto:
+  path: /produto
+  controller: App\Controller\ProdutoController::index
+
+cadastrar-produto:
+  path: /produto/cadastro
+  controller: App\Controller\ProdutoController::create
+
+editar-produto:
+  path: /produto/editar/{id}
+  controller: App\Controller\ProdutoController::update
+
+visualizar-produto:
+  path: /produto/ver/{id}
+  controller: App\Controller\ProdutoController::show
+
+deletar-produto:
+  path: /produto/deletar/{id}
+  controller: App\Controller\ProdutoController::delete
